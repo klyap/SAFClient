@@ -1,0 +1,18 @@
+name:                 client name
+building:             client building
+floor:                '1'
+latitude:             0.0
+longitude:            0.0
+location_source_type: 0  # common_pb2.USER_INPUT
+location_description: Virtual
+mobility_type:        1  # client_messages_pb2.ClientMetadata.DESKTOP
+sensors:
+    - module:              PhidgetsSensor
+      class:               Sensor
+      sensor_id:           1
+      datastore:           !!python/unicode '/tmp/phidgetsdata'
+      last_upload:         !!python/unicode ''
+      time_server:         'ntp-01.caltech.edu'
+server:               csn-server.appspot.com
+namespace:            csn 
+software_version:     SAFCSNclient v1.0
